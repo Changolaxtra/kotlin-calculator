@@ -16,10 +16,10 @@ class KotlinCalculator {
             .toCharArray()
             .forEach { item ->
                 when (item) {
-                    '+' -> stack.pop() + stack.pop().toString()
-                    '-' -> stack.pop() - stack.pop().toString()
-                    '/' -> stack.pop() / stack.pop().toString()
-                    '*' -> stack.pop() * stack.pop().toString()
+                    '+' -> stack.pop() + stack.pop()
+                    '-' -> stack.pop() - stack.pop()
+                    '/' -> stack.pop() / stack.pop()
+                    '*' -> stack.pop() * stack.pop()
                     else -> {
                         stack.push(StringNumber(item.toString()))
                     }

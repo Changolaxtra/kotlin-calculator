@@ -5,8 +5,8 @@ import java.util.Optional
 
 class SuffixExpressionConverter {
 
-    val result: StringBuilder = StringBuilder();
-    val stack: Stack<Char> = Stack();
+    private val result: StringBuilder = StringBuilder();
+    private val stack: Stack<Char> = Stack();
 
     fun convert(input: String): String {
         Optional.ofNullable(input)
